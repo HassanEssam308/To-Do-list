@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ShowDataFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:padding="10sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hello!"
+                android:textStyle="bold"
+                android:textSize="20sp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10sp"
+                android:text="All To Do"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/ShowDataFR_TV_NoData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=" No Todos Yet"
+                android:textSize="25sp"
+                android:textStyle="italic|bold"
+                android:gravity="center"
+                android:visibility="gone"
+                />
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/ShowDataFR_view_ShimmerContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shimmer_duration="5000">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/shimmer_layout" />
+
+                    <include layout="@layout/shimmer_layout" />
+
+                    <include layout="@layout/shimmer_layout" />
+
+                    <include layout="@layout/shimmer_layout" />
+
+                    <include layout="@layout/shimmer_layout" />
+
+                </LinearLayout>
+
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ShowDataFR_RecView_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" No Todos Yet"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textStyle="bold|italic"
+                android:layout_marginVertical="30sp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/ShowDataFR_FloatingBtn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="30sp"
+            android:contentDescription="Add"
+            android:src="@drawable/baseline_add_24"
+            app:rippleColor="#48BF3F"
+
+            />
+    </RelativeLayout>
+</FrameLayout>

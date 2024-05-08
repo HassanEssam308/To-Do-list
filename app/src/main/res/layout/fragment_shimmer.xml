@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ShimmerFragment">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/Shimmer_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:shimmer_duration="5000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/shimmer_layout" />
+
+            <include layout="@layout/shimmer_layout" />
+
+            <include layout="@layout/shimmer_layout" />
+
+            <include layout="@layout/shimmer_layout" />
+
+            <include layout="@layout/shimmer_layout" />
+
+        </LinearLayout>
+
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <!--        <androidx.cardview.widget.CardView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="10sp"-->
+    <!--            app:cardElevation="20sp"-->
+    <!--            app:cardCornerRadius="15sp"-->
+    <!--            >-->
+
+    <!--            <RelativeLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:padding="15sp">-->
+    <!--                <TextView-->
+    <!--                    android:id="@+id/ShimmerL_TV_Title"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_marginBottom="5sp"-->
+    <!--                    android:textStyle="bold|italic"-->
+    <!--                    android:textSize="22sp"-->
+    <!--                    android:background="#BDBBBB"-->
+    <!--                    />-->
+
+    <!--                <com.google.android.material.switchmaterial.SwitchMaterial-->
+    <!--                    android:id="@+id/ShimmerL_SwitchBtn_IsDone"-->
+    <!--                    android:layout_below="@+id/ShimmerL_TV_Title"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="10sp"-->
+    <!--                    android:textSize="12sp"-->
+    <!--                    android:layout_marginBottom="5dp"-->
+    <!--                    android:background="#BDBBBB"-->
+
+    <!--                    />-->
+    <!--                <TextView-->
+    <!--                    android:id="@+id/ShimmerL_TV_Body"-->
+    <!--                    android:layout_below="@+id/ShimmerL_SwitchBtn_IsDone"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:background="#BDBBBB"-->
+    <!--                    android:paddingBottom="10dp"-->
+    <!--                    android:textSize="25sp"-->
+    <!--                    />-->
+    <!--            </RelativeLayout>-->
+    <!--        </androidx.cardview.widget.CardView>-->
+
+
+</FrameLayout>

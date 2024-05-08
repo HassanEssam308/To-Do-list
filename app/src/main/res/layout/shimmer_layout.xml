@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginVertical="5sp"
+    android:layout_marginHorizontal="10dp"
+    app:cardElevation="20sp"
+    app:cardCornerRadius="15sp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15sp">
+        <TextView
+            android:id="@+id/ShimmerL_TV_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp"
+            android:textStyle="bold|italic"
+            android:textSize="22sp"
+            android:background="#BDBBBB"
+            />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/ShimmerL_SwitchBtn_IsDone"
+            android:layout_below="@+id/ShimmerL_TV_Title"
+            android:layout_width="match_parent"
+            android:layout_height="10sp"
+            android:textSize="12sp"
+            android:layout_marginBottom="5dp"
+            android:background="#BDBBBB"
+
+            />
+        <TextView
+            android:id="@+id/ShimmerL_TV_Body"
+            android:layout_below="@+id/ShimmerL_SwitchBtn_IsDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#BDBBBB"
+            android:paddingBottom="10dp"
+            android:textSize="25sp"
+            />
+    </RelativeLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

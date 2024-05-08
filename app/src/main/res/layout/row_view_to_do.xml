@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10sp"
+    app:cardElevation="20sp"
+    app:cardCornerRadius="15sp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15sp">
+                    <TextView
+                        android:id="@+id/RowView_TV_Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Title"
+                        android:layout_marginBottom="5sp"
+                        android:textStyle="bold|italic"
+                        android:textSize="22sp"
+                        />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/RowView_SwitchBtn_IsDone"
+                android:layout_below="@+id/RowView_TV_Title"
+                android:layout_width="match_parent"
+                android:layout_height="10sp"
+                android:text="Done"
+                android:textSize="12sp"
+                 />
+            <TextView
+                android:id="@+id/RowView_TV_Body"
+                android:layout_below="@+id/RowView_SwitchBtn_IsDone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="body"
+                android:paddingBottom="10dp"
+                android:textSize="25sp"
+                />
+    </RelativeLayout>
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:paddingStart="10sp"-->
+<!--        >-->
+<!--        <TextView-->
+<!--            android:id="@+id/RowView_TV_DayString"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="5sp"-->
+<!--            android:text="Wed"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textStyle="bold"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:id="@+id/RowView_TV_DayNum"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="5sp"-->
+<!--            android:layout_below="@+id/RowView_TV_DayString"-->
+<!--            android:text="13"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textStyle="bold"-->
+<!--            />-->
+<!--        <TextView-->
+<!--            android:id="@+id/RowView_TV_Month"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/RowView_TV_DayNum"-->
+<!--            android:text="Aug"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_margin="5sp"-->
+
+<!--            />-->
+
+<!--<View-->
+<!--    android:id="@+id/RowView_V_Line"-->
+<!--    android:layout_marginHorizontal="10sp"-->
+<!--    android:layout_toEndOf="@+id/RowView_TV_DayString"-->
+<!--    android:background="#8C8282"-->
+<!--    android:paddingVertical="10sp"-->
+<!--    android:layout_width="3dp"-->
+<!--    android:layout_height="70dp"-->
+<!--    android:layout_centerVertical="true"-->
+<!--    />-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/RowView_LinL_Right"-->
+<!--            android:layout_marginStart="20sp"-->
+<!--            android:layout_toEndOf="@+id/RowView_V_Line"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+<!--            <TextView-->
+<!--                android:id="@+id/RowView_TV_Title"-->
+<!--                android:layout_toEndOf="@id/RowView_TV_DayString"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="5kM Marathon"-->
+<!--                android:textStyle="bold|italic"-->
+<!--                android:textSize="22sp"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:id="@+id/RowView_TV_Body"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="At nearby staduim"-->
+<!--                android:textSize="22sp"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:id="@+id/RowView_TV_Remind"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Aug 31,2022"-->
+<!--                android:textColor="#0386ED"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="15sp"-->
+<!--                />-->
+<!--        </LinearLayout>-->
+<!--    </RelativeLayout>-->
+
+
+
+
+</androidx.cardview.widget.CardView>
